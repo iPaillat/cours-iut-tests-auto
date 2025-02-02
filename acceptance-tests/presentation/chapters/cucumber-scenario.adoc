@@ -38,7 +38,7 @@ public class MyServiceSteps {
 * Il y a dans le bar seulement 10 places assises.
 
 .*Première histoire :*
-* _Ils arrivent mais il y a déjà 9 personnes dans le bar donc ils se font refuser le droit d'entrée, le bar affiche complet._
+* _Ils arrivent mais il y a déjà 9 personnes dans le bar donc ils se font refuser le droit d'entrée._
 
 .*Deuxième histoire :*
 * _Il arrivent, il y a déjà 8 personnes dans le bar._
