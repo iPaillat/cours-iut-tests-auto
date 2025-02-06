@@ -10,13 +10,12 @@ Qui suis je ?
 === Le TP
 
 * Le dernier TP de ce cours sera noté.
-* A rendre quand ? : *avant le samedi 1 mars 23h59* :)
+* A rendre quand ? : *avant le vendredi 21 février 23h59* :)
 * Comment ?
-** sur un Repo Git public genre GitHub (recommandé)
+** sur un Repo Git public genre GitHub (**recommandé**)
 ** par zip envoyé par mail à csilari@sqli.com
 * Des questions pendant le temps imparti ?
 ** par mail à csilari@sqli.com
-** prochaine séance de TP du jeudi 8 février 16h00-18h00
 
 image::images/warning.png[]
 *Vérifier que votre projet compile !!!*
