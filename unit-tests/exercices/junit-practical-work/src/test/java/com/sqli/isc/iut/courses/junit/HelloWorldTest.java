@@ -1,9 +1,9 @@
 package com.sqli.isc.iut.courses.junit;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.slf4j.LoggerFactory.getLogger;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 
 public class HelloWorldTest {
@@ -12,7 +12,7 @@ public class HelloWorldTest {
 
 	@Test
 	public void this_is_my_first_test() {
-		LOGGER.debug("** This is my first test with JUnit 4 ***");
+		LOGGER.debug("** This is my first test with JUnit 5 ***");
 
 		assertTrue(true);
 	}

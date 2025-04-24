@@ -35,14 +35,14 @@
             <artifactId>slf4j-api</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit4.version}</version>
             <scope>test</scope>
-        </dependency>
+        </dependency> -->
         <!-- JUNIT 5 -->
-        <!-- <dependency>
+        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>${junit5.version}</version>
@@ -59,10 +59,10 @@
             <artifactId>junit-jupiter-params</artifactId>
             <version>${junit5.version}</version>
             <scope>test</scope>
-        </dependency> -->
+        </dependency>
     </dependencies>
 
-    <!-- <build>
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -73,5 +73,5 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build> -->
+    </build>
 </project>
