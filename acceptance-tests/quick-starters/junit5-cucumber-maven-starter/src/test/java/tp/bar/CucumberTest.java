@@ -1,4 +1,4 @@
-package com.sqli.isc.iut.courses.cucumber;
+package tp.bar;
 
 import io.cucumber.junit.platform.engine.Cucumber;
 
