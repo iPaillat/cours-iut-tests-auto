@@ -18,3 +18,13 @@ Feature: cocktail bar
     Then Mr Leblanc pays the full bill
     And the bill shows 20€
     And Mr Pignon is happy because he only had one drink
+
+  Scenario: Mr Pignon and Mr Leblanc pay separately, and Mr Leblanc orders more
+    Given there are already 3 people in the bar
+    When Mr Pignon and Mr Leblanc enter the bar
+    And Mr Pignon orders the cocktail of the month at 10€
+    And Mr Leblanc orders the cocktail of the month at 10€
+    Then Mr Pignon pays his own bill
+    And Mr Leblanc decides to order 2 more cocktails of the month at 10€ each
+    Then Mr Leblanc pays his own bill
+    And Mr Pignon is sad because he knows that more than one drink will ruin the night for him

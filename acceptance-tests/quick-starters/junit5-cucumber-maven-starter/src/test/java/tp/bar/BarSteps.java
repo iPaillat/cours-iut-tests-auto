@@ -84,4 +84,29 @@ public class BarSteps {
             .filter(e -> e.getKey().equals("Mr Pignon"))
             .count());
     }
+
+    @Then("Mr Pignon pays his own bill")
+    public void mr_pignon_pays_his_own_bill() {
+        assertTrue(orders.containsKey("Mr Pignon"));
+        assertEquals(10, orders.get("Mr Pignon"));
+    }
+
+    @Then("Mr Leblanc decides to order 2 more cocktails of the month at {int}€ each")
+    public void mr_leblanc_decides_to_order_more_cocktails(int price) {
+        int current = orders.getOrDefault("Mr Leblanc", 0);
+        orders.put("Mr Leblanc", current + price * 2);
+        billTotal += price * 2;
+    }
+
+    @Then("Mr Leblanc pays his own bill")
+    public void mr_leblanc_pays_his_own_bill() {
+        assertTrue(orders.containsKey("Mr Leblanc"));
+        assertEquals(30, orders.get("Mr Leblanc"));
+    }
+
+    @Then("Mr Pignon is sad because he knows that more than one drink will ruin the night for him")
+    public void mr_pignon_is_sad_because_more_than_one_drink_is_bad_for_him() {
+        int drinkCount = orders.getOrDefault("Mr Pignon", 0) / 10;
+        assertTrue(drinkCount <= 1, "Mr Pignon had more than one drink and will have a bad night.");
+    }
 }
