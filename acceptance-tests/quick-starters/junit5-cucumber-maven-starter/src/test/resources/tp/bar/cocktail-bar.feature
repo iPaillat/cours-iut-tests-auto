@@ -16,5 +16,5 @@ Feature: cocktail bar
     When Mr Pignon orders the cocktail of the month at 10€
     And Mr Leblanc orders the cocktail of the month at 10€
     Then Mr Leblanc pays the full bill
-    And the bill shows the correct total amount
+    And the bill shows 20€
     And Mr Pignon is happy because he only had one drink

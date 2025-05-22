@@ -73,9 +73,9 @@ public class BarSteps {
         payer = "Mr Leblanc";
     }
 
-    @Then("the bill shows the correct total amount")
-    public void the_bill_shows_the_correct_total_amount() {
-        assertEquals(20, billTotal); // 2 drinks at 10€ each
+    @Then("the bill shows {int}€")
+    public void the_bill_shows_the_correct_total_amount(int expectedTotal) {
+        assertEquals(expectedTotal, billTotal); // 2 drinks at 10€ each
     }
 
     @Then("Mr Pignon is happy because he only had one drink")
